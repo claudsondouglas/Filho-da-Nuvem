@@ -1,7 +1,7 @@
 Olá, eu sou Claudson, um estudante mixuruca que ama programar aplicações web.
 # Formações e Cursos
-**IFRN** - Informática ~(cursando)~
-**IMD**  - Desenvolvimento Web ~(cursando)~
+- **IFRN** - Informática ~(cursando)~
+- **IMD**  - Desenvolvimento Web ~(cursando)~
 
 
 # Conhecimentos

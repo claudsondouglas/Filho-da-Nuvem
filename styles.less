@@ -1,0 +1,187 @@
+@color-primary: #6C63FF;
+@color-dark: #2F2E41;
+
+body {
+  background: #FDFDFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: saturate(@color-dark, 5%);
+}
+
+.navbar {
+  background: white;
+  padding: 0 7%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .brand {
+    font-family: 'Lobster', cursive;
+    position: relative;
+    color: @color-primary;
+
+    small {
+      position: absolute;
+      top: -.3rem;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 40px;
+      letter-spacing:2px;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+
+  ul {
+    display: flex;
+    li {
+      display: block;
+      list-style: none;
+      padding: .3rem 1rem;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  padding: 5rem 10%;
+  margin-bottom: -5rem;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+
+  img {
+    width: 35%;
+  }
+
+  &-body {
+    width: 50%;
+    h1 {
+      margin: 0;
+      line-height: 1.2;
+      color: @color-dark;
+      font-size: 40px;
+    }
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.divider {
+  margin: 1rem 8%;
+  border: none;
+  background: #F8f8f8;
+  height: 2px;
+  display: block;
+}
+
+
+.section {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: ' ';
+    background: url('/assets/wave-1.svg') no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    min-height: 200px;
+    position: relative;
+    z-index: 1;
+  }
+  .section-body {
+    background: @color-primary;
+    padding: 0 10%;
+    color: white;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 200px;
+      margin-right: 4rem;
+    }
+  }
+}
+
+h1 {
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.cards {
+  margin: 4rem 10%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  h1 {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+
+    small {
+      display: block;
+      font-size: 25px;
+      color: @color-primary;
+    }
+  }
+
+  .card {    
+    flex-basis: 25%;
+    padding: 2rem;
+    background: white;
+    border: 2px solid #eee;
+    background: white;
+    border-radius: 1rem;
+  }
+}
+
+footer {
+  background: @color-primary;
+  color: white;
+
+  .menus {
+    display: flex;
+    padding: 3rem 5rem;
+    background: lighten(@color-primary, 5%);
+
+    .menu {
+      flex-basis: 30%;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 25px;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-top: .5rem;
+
+      svg {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .copy {
+    padding: 2rem;
+    color: white;
+    background: @color-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -226,3 +226,184 @@ footer {
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 600px) {
+  @size-heading: 30px;
+  @size-subheading: 25px;
+
+  .navbar {
+    padding: 0 5%;
+    height: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    .brand {
+      font-size: 1.5rem;
+
+      small {
+        font-size: 11px;
+      }
+    }
+
+    ul {
+      li {
+        padding: .2rem .5rem;
+        a {
+          font-size: x-small;
+        }
+      }
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: -5rem;
+    justify-content: unset;
+    align-items: center;
+    min-height: unset;
+
+    h1 {
+      margin-top: 1rem;
+      line-height: 1.2;
+      font-size: @size-heading;
+    }
+
+    img {
+      order: 1;
+      width: 90%;
+    }
+
+    &-body {
+      order: 2;
+      width: 100%;
+      text-align: center;
+
+      p {
+        margin: 0;
+        font-size: 18px;
+      }
+      .button {
+        margin: 3rem 0;
+      }
+    }
+  }
+.section {
+  position: relative;
+
+  &:before {
+    min-height: 80px;
+  }
+  .section-body {
+    padding: 0 2rem;
+    color: white;
+    padding-bottom: 3rem;
+    display: block;
+    align-items: center;
+
+    h2 {
+      font-size: @size-subheading;
+    }
+
+    img {
+      width: 130px;
+      margin-right: 0rem;
+    }
+  }
+}
+.cards {
+  margin: 2rem 1rem;
+  margin-bottom: 0;
+  display: block;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    small {
+      font-size: 20px;
+    }
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+footer {
+  background: @color-primary;
+  color: white;
+
+  .menus {
+    display: flex;
+    padding: 2rem;
+    background: lighten(@color-primary, 5%);
+
+    .menu {
+      flex-basis: 30%;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: @size-subheading;
+    }
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-top: .5rem;
+
+      a { color: #eee; }
+
+      svg {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .copy {
+    padding: 2rem 1rem;
+    color: white;
+    background: @color-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-small;
+
+    svg {
+      transform: scale(.6);
+      margin: 0;
+    }
+  }
+}
+.button {
+  background: @color-primary;
+  min-width: 300px;
+  padding: 1rem 1.5rem;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .5s;
+
+  &:hover {
+    background: darken(@color-primary, 5);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    padding-right: 1rem;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+}
